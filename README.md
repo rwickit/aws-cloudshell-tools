@@ -5,7 +5,7 @@ Display and update current version of all software and specifications within AWS
 _**TLDR;** Just run this:_
 
 ```bash
-curl -fsS https://links.rwick.it/aws-cloudshell-tools | bash
+curl -LfsS https://links.rwick.it/aws-cloudshell-tools | bash
 ```
 
 ## Purpose
@@ -32,7 +32,7 @@ To successfully run this solution:
 ### View Current
 
 ```bash
-curl -fsS https://links.rwick.it/aws-cloudshell-tools | bash
+curl -LfsS https://links.rwick.it/aws-cloudshell-tools | bash
 ```
 
 ```bash
@@ -42,7 +42,7 @@ wget https://links.rwick.it/aws-cloudshell-tools -O- | bash
 ### Update All
 
 ```bash
-curl -fsS https://links.rwick.it/aws-cloudshell-tools | bash
+curl -LfsS https://links.rwick.it/aws-cloudshell-tools | bash
 ```
 
 ```bash
