@@ -12,8 +12,8 @@ Details for the software and specifications for these tools are documented by AW
 
 This solution can be run two ways.
 
-1. View current version of all installed software
-2. Update all versions of software
+1. [View current](#View-Current) version of all installed software
+2. [Update all](#Update-All) versions of software
 
 To successfully run this solution:
 1. Change to the region within the AWS Console you wish to run your commands from
