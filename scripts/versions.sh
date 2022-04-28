@@ -1,5 +1,6 @@
 #!/bin/bash
 
+echo ""
 echo "Getting Shell Versions..."
 echo ""
 
