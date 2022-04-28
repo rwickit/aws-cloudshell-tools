@@ -1,35 +1,35 @@
 #!/bin/bash
 
 echo "Getting Shell Versions..."
-echo ""
+echo(
 
 echo "Bash:"
 bash --version
-echo ""
+echo(
 
 echo "Z Shell:"
 zsh --version
-echo ""
+echo(
 
 echo "Powershell (pwsh):"
 pwsh --version
-echo ""
+echo(
 
 echo "Getting AWS CLI Versions..."
-echo ""
+echo(
 
 echo "AWS CLI:"
 aws --version
-echo ""
+echo(
 
 echo "EB CLI:"
 eb --version
-echo ""
+echo(
 
 echo "ECS CLI:"
 ecs-cli --version
-echo ""
+echo(
 
 echo "SAM CLI:"
 sam --version
-echo ""
+echo(
