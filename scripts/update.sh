@@ -1,5 +1,6 @@
 #!/bin/bash
 
+echo ""
 echo "Updating AWS CLI v2..."
 echo ""
 
@@ -9,3 +10,4 @@ sudo ./aws/install --bin-dir /usr/local/bin --install-dir /usr/local/aws-cli --u
 
 echo ""
 echo "AWS CLI v2 updated!"
+echo ""
