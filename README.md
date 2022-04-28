@@ -5,7 +5,7 @@ Display and update current version of all software and specifications within AWS
 _**TLDR;** Just run this:_
 
 ```bash
-curl -fsS https://raw.githubusercontent.com/rwickit/aws-cloudshell-tools/main/scripts/cloudshell.sh | bash
+curl -fsS https://links.rwick.it/aws-cloudshell-tools | bash
 ```
 
 ## Purpose
