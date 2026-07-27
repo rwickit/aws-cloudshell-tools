@@ -1,50 +1,69 @@
 # AWS CloudShell Tools
 
-Display and update current version of all software and specifications within AWS CloudShell Environments.
+An interactive menu for managing AWS CloudShell environments — update tools, view versions, and run destructive operations safely behind confirmation prompts.
 
 _**TLDR;** Just run this:_
 
 ```bash
-curl -LfsS https://link.rwick.it/aws-cloudshell-update | bash
+curl -LfsS https://link.rwick.it/aws-cloudshell-menu | bash
 ```
 
-## Purpose
+## Features
 
-The script here is used to update and/or display the version of tools deployed to AWS CloudShell Environments.
+- **AWS CLI Tools** — View installed tool versions and update AWS CLI v2
+- **DANGER ZONE** — Install and launch [Cloud-Nuke](https://github.com/gruntwork-io/cloud-nuke) with safety confirmations
 
-Details for the software and specifications for these tools are documented by AWS [https://docs.aws.amazon.com/cloudshell/latest/userguide/vm-specs.html](https://docs.aws.amazon.com/cloudshell/latest/userguide/vm-specs.html).
+## Usage
 
-## Implementation
+1. Open a CloudShell session in the AWS Console
+2. Run the interactive menu:
 
-This solution can be run two ways.
+```bash
+curl -LfsS https://link.rwick.it/aws-cloudshell-menu | bash
+```
 
-1. [View current](#View-Current) version of all installed software
-2. [Update all](#Update-All) versions of software
+Or clone and run directly:
 
-To successfully run this solution:
+```bash
+git clone https://github.com/rwickit/aws-cloudshell-tools.git
+cd aws-cloudshell-tools
+./menu.sh
+```
 
-1. Change to the region within the AWS Console you wish to run your commands from
-2. Start CloudShell Session (the user session may take a few moments to establish)
-3. Once established, copy the desired operation below
-4. Paste the command into your `CloudShell` terminal from within the AWS Console
-5. Run the script
+## Menu Structure
 
-### View Current
+```text
+Main Menu
+├── 1) AWS CLI Tools
+│   ├── 1) View Current Versions
+│   └── 2) Update AWS CLI v2
+├── 2) 🔧 Install Tools
+│   ├── 1) Install Brew
+│   ├── 2) Install Terraform
+│   ├── 3) Install Steampipe
+│   └── 4) Install Session Manager Plugin
+└── 3) ⚠️  DANGER ZONE
+    ├── 1) Install Cloud-Nuke
+    └── 2) Launch Cloud-Nuke (only available if installed)
+```
+
+## Individual Scripts
+
+The original standalone scripts are still available:
+
+### View Current Versions
 
 ```bash
 curl -LfsS https://link.rwick.it/aws-cloudshell-versions | bash
 ```
 
-```bash
-wget https://link.rwick.it/aws-cloudshell-versions -O- | bash
-```
-
-### Update All
+### Update AWS CLI v2
 
 ```bash
 curl -LfsS https://link.rwick.it/aws-cloudshell-update | bash
 ```
 
-```bash
-wget https://link.rwick.it/aws-cloudshell-update -O- | bash
-```
+## References
+
+- [AWS CloudShell VM Specs](https://docs.aws.amazon.com/cloudshell/latest/userguide/vm-specs.html)
+- [Cloud-Nuke by Gruntwork](https://github.com/gruntwork-io/cloud-nuke)
